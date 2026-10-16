@@ -1,4 +1,4 @@
-What I deemed interesting depended on these non-qualatative factors, which may need fixing in the future but this is just a screen test:
+What I deemed interesting depended on these non-qualitative factors, which may need fixing in the future but this is just a screen test:
 - large rises followed by a decline
 - sustained changes
 - differences between observations
@@ -8,7 +8,7 @@ What I deemed interesting depended on these non-qualatative factors, which may n
 The X55 source is interesting
  - Mentioned in the paper in this folder
  - Source is above Eddington limit for a 1.4 solar-mass neutron star
-    - If it sits in a gc, it would be unusually bright
+    - If it sits in a globular cluster, it would be unusually bright
 - Coincides with HST globular cluster candidate
    
 X5 Source/ HD 110086

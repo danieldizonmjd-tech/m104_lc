@@ -3,7 +3,7 @@
 # imports
 import os
 from glob import glob
-import astropy.units as u                                     # niche library for astronomy, but very useful for this project
+import astropy.units as u                                     # niche library in Python, but very useful for this project
 from astropy.coordinates import SkyCoord                      # ditto
 from astroquery.simbad import Simbad                          # ditto
 

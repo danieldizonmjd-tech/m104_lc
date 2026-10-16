@@ -19,7 +19,7 @@ for fname in files:                                             # can name fname
     data = np.loadtxt(fname)                                    # 2d array: rows = time bins, colums = quantities (time, counts, exposure, etc.)
     t0 = data[0, 1]                                             # next three lines will just calcuate the number of bins for rebinning
     dt = data[0, 3] - data[0, 1]
-    nbin = round(bin_ks * 1000 / dt) 
+    nbin = round(bin_ks * 1000 / dt)                            # see later that bins divided to 1.0015 ks (~1.5 % difference)
 
     t = [0]                                                    # bin end time, starts at 0
     lc = []                                                    # holds total counts per bin, starts empty

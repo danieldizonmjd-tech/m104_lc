@@ -1,3 +1,5 @@
+## This code runs SIMBAD queries, which is a database.
+
 # imports
 import os
 from glob import glob
@@ -27,3 +29,5 @@ for fname in files:
     print(source, "ObsID", obsid)
     print(result)       # prints None if nothing was found
     print()
+
+## end

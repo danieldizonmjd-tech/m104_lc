@@ -59,10 +59,7 @@ The plots go into folders based on the largest single-bin significance:
 - The source and observation ID appear in the upper-left corner. An empty
   light curve instead says “0 counts in input”.
 
-The `p_global` column is a rough correction for checking several bins. It is
-not a full simulation, and a high significance in one bin doesn't prove that
-a source is variable. I still need to look at the plots and do more checks.
-
+  
 ## Current results
 
 The current `outputplots/summary.csv` has 357 observations of 119 source

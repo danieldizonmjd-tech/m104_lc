@@ -1,0 +1,91 @@
+J123945.204-113849.99 ObsID 1586                                                                                                  Star, likely in foreground (flare in the light curve, peak +8.04 sigma)
+ main_id          ra               dec       coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                 deg               deg           mas         mas          deg                                        
+--------- ------------------ --------------- ----------- ----------- ------------- -------------- -------------------
+HD 110086 189.93836953647997 -11.64712513677      0.0194      0.0119            90              O 2020yCat.1350....0G
+
+J123945.204-113849.99 ObsID 9533                                                                                                  Same star, likely in foreground (big flare in the light curve, peak +25.04 sigma)
+ main_id          ra               dec       coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                 deg               deg           mas         mas          deg                                        
+--------- ------------------ --------------- ----------- ----------- ------------- -------------- -------------------
+HD 110086 189.93836953647997 -11.64712513677      0.0194      0.0119            90              O 2020yCat.1350....0G
+
+WARNING: NoResultsWarning: The request executed correctly, but there was no data corresponding to these criteria in SIMBAD [astroquery.simbad.core]
+J123956.969-113929.38 ObsID 9532                                                                                                 unidentified (this was in the only one in the notable category)
+main_id  ra dec coo_err_maj coo_err_min coo_err_angle coo_wavelength coo_bibcode
+        deg deg     mas         mas          deg                                
+------- --- --- ----------- ----------- ------------- -------------- -----------
+
+J123945.204-113849.99 ObsID 9532                                                                                                  Same star, likely in foreground
+ main_id          ra               dec       coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                 deg               deg           mas         mas          deg                                        
+--------- ------------------ --------------- ----------- ----------- ------------- -------------- -------------------
+HD 110086 189.93836953647997 -11.64712513677      0.0194      0.0119            90              O 2020yCat.1350....0G
+
+J123951.082-113648.42 ObsID 9532                                                                                                  Known X-ray Source X13.
+   main_id            ra                 dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                     deg                 deg             mas         mas          deg                                        
+------------- ------------------ ------------------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X13 189.96291666666664 -11.613333333333335          --          --            --                2003ApJ...599.1067D
+
+J123956.263-113155.45 ObsID 9533                                                                                                  Likely a star and not a known X-ray source
+        main_id                ra             dec       coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                              deg             deg           mas         mas          deg                                        
+----------------------- --------------- --------------- ----------- ----------- ------------- -------------- -------------------
+2MASS J12395622-1131547 189.98448994628 -11.53193457076      0.4529       0.277            90              O 2020yCat.1350....0G
+
+J123956.424-113724.82 ObsID 9532                                                                                                  Known X-ray Source X31
+   main_id       ra           dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                deg                 deg             mas         mas          deg                                        
+------------- ------- ------------------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X31 189.985 -11.623333333333333          --          --            --                2003ApJ...599.1067D
+
+J123956.477-113830.59 ObsID 9532                                                                                                 unidentified
+main_id  ra dec coo_err_maj coo_err_min coo_err_angle coo_wavelength coo_bibcode
+        deg deg     mas         mas          deg                                
+------- --- --- ----------- ----------- ------------- -------------- -----------
+
+J123956.477-113830.59 ObsID 9533                                                                                                  Same source, still no SIMBAD match
+main_id  ra dec coo_err_maj coo_err_min coo_err_angle coo_wavelength coo_bibcode
+        deg deg     mas         mas          deg                                
+------- --- --- ----------- ----------- ------------- -------------- -----------
+
+J123956.921-113659.08 ObsID 9533                                                                                                  Known X-ray Source X33
+   main_id            ra                 dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                     deg                 deg             mas         mas          deg                                        
+------------- ------------------ ------------------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X33 189.98708333333332 -11.616388888888887          --          --            --                2003ApJ...599.1067D
+
+J123956.969-113929.38 ObsID 9533                                                                                                  No SIMBAD match
+main_id  ra dec coo_err_maj coo_err_min coo_err_angle coo_wavelength coo_bibcode
+        deg deg     mas         mas          deg                                
+------- --- --- ----------- ----------- ------------- -------------- -----------
+
+J123959.796-113700.41 ObsID 9532                                                                                                  Known X-ray Source X66
+   main_id            ra                 dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                     deg                 deg             mas         mas          deg                                        
+------------- ------------------ ------------------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X66 189.99916666666664 -11.616666666666669          --          --            --                2003ApJ...599.1067D
+
+J123959.796-113700.41 ObsID 9533                                                                                                  Same X-ray source
+   main_id            ra                 dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                     deg                 deg             mas         mas          deg                                        
+------------- ------------------ ------------------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X66 189.99916666666664 -11.616666666666669          --          --            --                2003ApJ...599.1067D
+
+J124000.934-113654.14 ObsID 9532                                                                                                  Known X-ray Source, listed in the Swartz et al. 2004 catalog (ApJS) as SGT2004 J124000.97-113654.2
+           main_id                    ra                 dec         coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                                     deg                 deg             mas         mas          deg                                        
+----------------------------- ------------------ ------------------- ----------- ----------- ------------- -------------- -------------------
+[SGT2004] J124000.97-113654.2 190.00404166666667 -11.615055555555555          --          --            --                2004ApJS..154..519S
+
+J124001.277-113730.11 ObsID 1586                                                                                                  Known X-ray Source X84
+   main_id            ra           dec   coo_err_maj coo_err_min coo_err_angle coo_wavelength     coo_bibcode    
+                     deg           deg       mas         mas          deg                                        
+------------- ------------------ ------- ----------- ----------- ------------- -------------- -------------------
+[DKV2003] X84 190.00541666666663 -11.625          --          --            --                2003ApJ...599.1067D
+
+J124005.602-114147.15 ObsID 9532                                                                                                 unidentified
+main_id  ra dec coo_err_maj coo_err_min coo_err_angle coo_wavelength coo_bibcode
+        deg deg     mas         mas          deg                                
+------- --- --- ----------- ----------- ------------- -------------- -----------

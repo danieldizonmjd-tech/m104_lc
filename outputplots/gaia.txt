@@ -1,0 +1,51 @@
+The current archive release 3.15 contains two breaking changes. Please see https://www.cosmos.esa.int/web/gaia/news#GACSrelease315 for details. In case of questions or feedback, please consult the Gaia helpdesk at https://www.cosmos.esa.int/web/gaia/gaia-helpdesk.
+
+Source: J123945.204-113849.99
+INFO: Query finished. [astroquery.utils.tap.core]
+     source_id       separation_arcsec  phot_g_mean_mag     parallax     parallax_error parallax_over_error        pmra         pmra_error       pmdec       pmdec_error    ruwe  
+                                              mag             mas             mas                                mas / yr        mas / yr       mas / yr       mas / yr           
+------------------- ------------------- --------------- ---------------- -------------- ------------------- ------------------ ----------- ----------------- ----------- ---------
+3530135260984725248 0.39573405760770286        9.957937 7.41695523344504    0.022807416           325.19928 -21.33875558810243 0.026496653 -39.1522654638804 0.021534165 1.1970397
+
+Source: J123956.969-113929.38
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123951.082-113648.42
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123956.263-113155.45
+INFO: Query finished. [astroquery.utils.tap.core]
+     source_id      separation_arcsec  phot_g_mean_mag       parallax      parallax_error parallax_over_error        pmra        pmra_error       pmdec        pmdec_error    ruwe  
+                                             mag               mas              mas                                mas / yr       mas / yr       mas / yr        mas / yr           
+------------------- ------------------ --------------- ------------------- -------------- ------------------- ------------------ ---------- ------------------ ----------- ---------
+3530171540572389504 0.5379510160580655       19.424326 0.18886717535680253      0.5289292          0.35707462 0.7068610242494132  0.6199282 0.1730796721699845  0.42751265 1.3557222
+
+Source: J123956.424-113724.82
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123956.477-113830.59
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123956.921-113659.08
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123959.796-113700.41
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J124000.934-113654.14
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J124001.277-113730.11
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J124005.602-114147.15
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.

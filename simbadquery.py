@@ -1,6 +1,5 @@
-## This code runs SIMBAD queries, which is a database.
-
-# imports
+## This code fetched information from SIMBAD, which is a database
+#  imports
 import os
 from glob import glob
 import astropy.units as u                                     # niche library in Python, but very useful for this project
@@ -9,8 +8,7 @@ from astroquery.simbad import Simbad                          # ditto
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))          # changes directory to the location of this file
 
-files = glob("plotstolookinto/*.png")
-
+files = (glob("outputplots/1_special_5sigma/*.png")+glob("outputplots/2_notable_4sigma/*.png")+glob("outputplots/3_interesting_3sigma/*.png"))
 for fname in files:
     name = os.path.basename(fname).replace(".png", "")
     source, obsid = name.split("_")                           # split the name into source and obsid, which are separated by an underscore

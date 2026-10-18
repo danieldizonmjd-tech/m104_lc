@@ -21,8 +21,8 @@ explore.
 
 I use published papers for background on X-ray point sources, especially
 sources in M104. They help me understand these objects and compare my results
-with previous work. The scripts don't use the papers as input, and full-text
-PDFs are not included in this repository.
+with previous work. Copies are in `papers/`, including additional papers in
+`papers/exppaper/`. The scripts don't use these PDFs as input.
 
 ## What the script does
 

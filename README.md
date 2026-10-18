@@ -44,6 +44,25 @@ The plots go into folders based on the largest single-bin significance:
 | `4_mild_2sigma/` | At least 2σ but below 3σ |
 | `5_nothing_to_see_here/` | Below 2σ |
 
+## How to read a light-curve plot
+
+- The x-axis is time in kiloseconds (ks); the y-axis is counts in each
+  approximately 1 ks bin.
+- The black step line shows the observed counts. The gray dashed step line is
+  the expected counts for a constant source rate, accounting for each bin's
+  exposure.
+- Red markers flag bins whose counts differ from that expectation. An open
+  circle means 2σ to less than 3σ, a filled circle means 3σ to less than 5σ,
+  and a star means 5σ or greater. Marker shape and fill show the size of the
+  deviation, not whether it is an increase or decrease.
+- The label beside the strongest marked bin gives its count and signed
+  significance. A `+` means more counts than expected (a possible flare); a
+  `−` means fewer counts than expected (a possible dip). Bins without a red
+  marker are below 2σ.
+- The source and observation ID appear in the upper-left corner. An empty
+  light curve instead says “0 counts in input”; it has no constant-rate line
+  or significance markers.
+
 The `p_global` column is a rough correction for checking several bins. It is
 not a full simulation, and a high significance in one bin doesn't prove that
 a source is variable. I still need to look at the plots and do more checks.

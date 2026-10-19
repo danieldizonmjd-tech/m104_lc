@@ -1,5 +1,5 @@
 ## I will be explaining my code for a little introduction for those who may not be familiar with Python
-# NOTE: The code is fully written by me. Though most of the logic came from me, I did get a little help from Claude on the Poisson statistics
+# NOTE: I did get a little help from Claude on working out the logic of the Poisson statistics
 # logic and how to style the plots...
 
 # setting things up in this

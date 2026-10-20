@@ -29,7 +29,7 @@ if len(results) > 0:
     lc = lc.remove_nans() # removes missing values
 
     # make the plot
-    lc.plot(color="black", linewidth=0.8) # lk automatically gives us a legend
+    lc.plot(color="black", linewidth=0.8) # lk automatically gives us a legend, it looks good so I am keepng it ;P.
     plt.title(f"TIC{tic}")
     plt.xlabel("Time ~ BTJD")
     plt.ylabel("Flux ~ e-/s")

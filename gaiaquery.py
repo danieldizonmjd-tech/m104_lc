@@ -12,7 +12,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__))) # changes directory to the 
 files = (glob("outputplots/1_special_5sigma/*.png")+glob("outputplots/2_notable_4sigma/*.png")+glob("outputplots/3_interesting_3sigma/*.png"))
 
 checked = set() # keeps track of sources we already searched
-Gaia.ROW_LIMIT = -1  # return every candidate within the search radius
+Gaia.ROW_LIMIT = -1  # return every candidate within the search radius (I will talk about this later)
 
 # these are the things we want Gaia to tell us
 columns = ["source_id", "ra", "dec", "phot_g_mean_mag", "parallax", "parallax_error", "parallax_over_error", "pmra", "pmra_error", "pmdec", "pmdec_error", "ruwe"]

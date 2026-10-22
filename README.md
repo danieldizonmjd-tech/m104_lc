@@ -71,7 +71,7 @@ the terminal. These queries require an internet connection.
 Search for HD 110086 and download the first available SPOC light curve:
 
 ```powershell
-python TESS.py
+python TESS\TESS.py
 ```
 
 The script prints the TIC match and available light curves, then saves a plot

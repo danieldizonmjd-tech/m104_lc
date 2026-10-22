@@ -36,7 +36,7 @@ if len(results) > 0:
     plt.ylabel("Flux ~ e-/s")
 
     plt.tight_layout()
-    plt.savefig("TESS/HD110086_TESS_lightcurve.png", dpi=300) # save inside TESS
+    plt.savefig("HD110086_TESS_lightcurve.png", dpi=300)
     plt.show()
 
     print("Saved")

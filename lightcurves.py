@@ -19,7 +19,8 @@ from scipy.stats import poisson, norm  # the statistics
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   # moves to the folder this to this script
-bin_ks = 1  # bin width is 1 ks 
+bin_ks = 1  # bin width is 1 ks
+# I tried 1, 5, 10 ks and no dips were detected. 1 ks focuses just on flares
 USE_Multiprocessing = True
 
 files = glob("ascii_m104/*_lc_ascii.txt")   # finds every file that ends with "_lc_ascii.txt"
@@ -81,12 +82,17 @@ def analyze_one(fname):  # we are defining a function here
     else:
         # this is why bins with less exposure don't look like fake dips
         rate = total / ex[good].sum()  
+        for _ in range(5):
+            keep = good & (lc <= rate * ex + 3 * np.sqrt(rate * ex) + 1)
+            if keep.sum() == 0:
+                break
+            rate = lc[keep].sum() / ex[keep].sum()
         mu = np.where(good, rate * ex, np.nan)  
         sig = np.full(len(lc), np.nan) 
 
         # Notice that I used Poisson. Gaussian only works when you expect lots of counts per bin, but a lot of my bins only have 0-3.
         # I used to do a for loop here but this is much faster and probably easier to read
-        sig = np.full(len(lc), np.nan)
+        
 
         for i in range(len(lc)):
             if not good[i]:          # telescope wasn't looking, skip
@@ -148,8 +154,6 @@ def analyze_one(fname):  # we are defining a function here
         # creates icons           open o = 2-3 sigma, filled o = 3-4, diamond = 4-5, star = 5+
         red = "#b2182b"
         # nothing_to_see_here = a < 2 there is nothing unusual
-        # 5 sigma or higher: red stars
-        special = a >= 5
         for i in range(len(centers)):
             if a[i] >= 5:
                 plt.plot(centers[i], lc[i], "*", color=red, ms=11)
@@ -198,7 +202,7 @@ def analyze_one(fname):  # we are defining a function here
     # saving to folder
     folder_path = f"outputplots/{event_type}/{tier}"
     os.makedirs(folder_path, exist_ok=True)
-    plt.savefig(f"{folder_path}/{name}.png", dpi=300)# make dpi lower and this will become very fast dpi is dotes per inch
+    plt.savefig(f"{folder_path}/{name}.png", dpi=300)# I will recommened to lower this if more datasets
     plt.close()  # free memory for next
 
     return (name, int(total), int(good.sum()), peak, p_global, event_type, tier)

@@ -1,0 +1,6 @@
+PASS  both            got both      expected both  (peak 6.11 sigma)
+PASS  fl              got flare     expected flare  (peak 5.24 sigma)
+PASS  d               got dip       expected dip  (peak 3.37 sigma)
+PASS  g               got no_event  expected no_event  (peak 1.88 sigma)
+PASS  cons            got no_event  expected no_event  (peak 1.61 sigma)
+PASS  0               got empty     expected empty  (peak 0.00 sigma)

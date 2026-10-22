@@ -237,7 +237,10 @@ if __name__ == "__main__":
     print(f"\nSaved {len(files)} plots")
 
 ## coder's, author's, my note??
-# I hope you were able to understand my code pretty well. I know it is long but if people would look at this in the future when my portion of this project is finished, I want them to understand this. If any questions
-# contact me at danieldizon.mjd@gmail.com I'll get to you soon ;)
+# I hope you were able to understand my code pretty well. I know it is long
+#but if people would look at this in the future when my portion of this project is finished, I want them to understand this. 
+#If any questions, contact me at danieldizon.mjd@gmail.com 
+# I'll get to you soon ;)
 
+# MJD
 ### end

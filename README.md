@@ -18,13 +18,41 @@ The Chandra analysis expects light-curve text files matching
 Run the analysis from the project folder:
 
 ```powershell
-python lightcurves_flares.py
+python lightcurves.py
 ```
 
 The script combines the input data into 1 ks bins, scores count-rate deviations
 using Poisson probabilities, and saves plots under `outputplots/` by event type
 and significance tier. It also writes a significance-sorted
 `outputplots/summary.csv`.
+
+## Check the analysis with synthetic data
+
+The `faketest/` folder contains a repeatable fake-data generator and a small
+summary checker. Run these checks in a separate copy of the project so the
+synthetic inputs and generated plots do not mix with real data.
+
+From that copy's project folder, generate the synthetic light curves and copy
+them into the analysis input directory:
+
+```powershell
+python faketest\fakedata.py
+Copy-Item faketest\ascii_test\*_lc_ascii.txt ascii_m104\
+python lightcurves.py
+```
+
+The generator creates examples of constant, flare, dip, gap, empty, and
+combined flare-and-dip light curves, plus 200 constant-rate sources. To run
+the checker, copy the generated summary to the location it reads and run it:
+
+```powershell
+New-Item -ItemType Directory -Force faketest\outputplots | Out-Null
+Copy-Item outputplots\summary.csv faketest\outputplots\summary.csv
+python faketest\null.py
+```
+
+The checker reports whether the example event types match expectations and
+how many constant-rate sources have a global probability below 0.05.
 
 ## Query source catalogues
 

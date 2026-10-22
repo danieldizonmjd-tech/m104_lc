@@ -9,7 +9,7 @@ from astroquery.gaia import Gaia # queries Gaia instead of SIMBAD
 
 os.chdir(os.path.dirname(os.path.abspath(__file__))) # changes directory to the location of this file
 
-files = (glob("outputplots/1_special_5sigma/*.png")+glob("outputplots/2_notable_4sigma/*.png")+glob("outputplots/3_interesting_3sigma/*.png"))
+files = (glob("outputplots/flare/1_special_5sigma/*.png")+glob("outputplots/flare/2_notable_4sigma/*.png")+glob("outputplots/flare/3_interesting_3sigma/*.png")+glob("outputplots/dip/4_mild_2sigma/*.png"))
 
 checked = set() # keeps track of sources we already searched
 Gaia.ROW_LIMIT = -1  # return every candidate within the search radius (I will talk about this later)
@@ -37,8 +37,7 @@ for fname in files:
     print("\nSource:", source)
 
     # ask Gaia for anything within 2 arcseconds
-    job = Gaia.cone_search_async(coord, radius=2 * u.arcsec, table_name="gaiadr3.gaia_source", columns=columns
-    )
+    job = Gaia.cone_search_async(coord, radius=2 * u.arcsec, table_name="gaiadr3.gaia_source", columns=columns)
     result = job.get_results()    # gets the table from the query
 
     if len(result) == 0:

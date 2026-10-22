@@ -2,8 +2,8 @@ The current archive release 3.15 contains two breaking changes. Please see https
 
 Source: J123945.204-113849.99
 INFO: Query finished. [astroquery.utils.tap.core]
-     source_id       separation_arcsec  phot_g_mean_mag     parallax     parallax_error parallax_over_error        pmra         pmra_error       pmdec       pmdec_error    ruwe  
-                                              mag             mas             mas                                mas / yr        mas / yr       mas / yr       mas / yr           
+     source_id       separation_arcsec  phot_g_mean_mag     parallax     parallax_error parallax_over_error        pmra         pmra_error       pmdec   pmdec_error    ruwe  
+                                              mag             mas             mas                                mas / yr        mas / yr       mas / yr     mas / yr           
 ------------------- ------------------- --------------- ---------------- -------------- ------------------- ------------------ ----------- ----------------- ----------- ---------
 3530135260984725248 0.39573405760770286        9.957937 7.41695523344504    0.022807416           325.19928 -21.33875558810243 0.026496653 -39.1522654638804 0.021534165 1.1970397
 
@@ -17,8 +17,8 @@ Nothing found within 2 arcseconds.
 
 Source: J123956.263-113155.45
 INFO: Query finished. [astroquery.utils.tap.core]
-     source_id      separation_arcsec  phot_g_mean_mag       parallax      parallax_error parallax_over_error        pmra        pmra_error       pmdec        pmdec_error    ruwe  
-                                             mag               mas              mas                                mas / yr       mas / yr       mas / yr        mas / yr           
+     source_id      separation_arcsec  phot_g_mean_mag       parallax      parallax_error parallax_over_error        pmra        pmra_error       pmdec     pmdec_error    ruwe  
+                                             mag               mas              mas                                mas / yr       mas / yr       mas / yr       mas / yr           
 ------------------- ------------------ --------------- ------------------- -------------- ------------------- ------------------ ---------- ------------------ ----------- ---------
 3530171540572389504 0.5379510160580655       19.424326 0.18886717535680253      0.5289292          0.35707462 0.7068610242494132  0.6199282 0.1730796721699845  0.42751265 1.3557222
 
@@ -47,5 +47,20 @@ INFO: Query finished. [astroquery.utils.tap.core]
 Nothing found within 2 arcseconds.
 
 Source: J124005.602-114147.15
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J123945.245-113601.15
+INFO: Query finished. [astroquery.utils.tap.core]
+     source_id       separation_arcsec  phot_g_mean_mag       parallax      parallax_error parallax_over_error        pmra        pmra_error        pmdec       pmdec_error    ruwe  
+                                              mag               mas              mas                                mas / yr       mas / yr        mas / yr        mas / yr           
+------------------- ------------------- --------------- ------------------- -------------- ------------------- ------------------ ---------- ------------------- ----------- ---------
+3530147213879577856 0.43321317029186057       19.707521 0.32722374040714197     0.70315653            0.465364 0.5528886296827378 0.80398965 0.09122571190173914   0.5881557 1.4583524
+
+Source: J123959.875-113623.36
+INFO: Query finished. [astroquery.utils.tap.core]
+Nothing found within 2 arcseconds.
+
+Source: J124001.834-113615.91
 INFO: Query finished. [astroquery.utils.tap.core]
 Nothing found within 2 arcseconds.

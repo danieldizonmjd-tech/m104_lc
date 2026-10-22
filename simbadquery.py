@@ -8,7 +8,7 @@ from astroquery.simbad import Simbad                          # ditto
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))          # changes directory to the location of this file
 
-files = (glob("outputplots/1_special_5sigma/*.png")+glob("outputplots/2_notable_4sigma/*.png")+glob("outputplots/3_interesting_3sigma/*.png"))
+files = (glob("outputplots/flare/1_special_5sigma/*.png")+glob("outputplots/flare/2_notable_4sigma/*.png")+glob("outputplots/flare/3_interesting_3sigma/*.png")+glob("outputplots/dip/4_mild_2sigma/*.png"))
 for fname in files:
     name = os.path.basename(fname).replace(".png", "")
     source, obsid = name.split("_")                           # split the name into source and obsid, which are separated by an underscore

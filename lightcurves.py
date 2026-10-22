@@ -6,9 +6,8 @@
 import os # lets us use our operating system
 import csv  # reads and writes CSV files
 from glob import glob # gets files / import one function
-from multiprocessing import Pool # Dr. Di Stefano said this will code will be used to analyze more datasets in the future, so I am importing this to make analysis faster
-# it basically gives a CPU core one file
-# pretty cool right? I am learning more about this and I rely on heavy documentation.
+from multiprocessing import Pool # Dr. Di Stefano said this will code will be used to analyze more datasets in the future, so I am importing this to make analysis fast it basically gives a CPU core one file
+# Not on Topic: pretty cool right? I am learning more about this and I rely on heavy documentation. People in ML use this.
 import numpy as np # so that we can do math faster
 import matplotlib # plotting
 matplotlib.use("Agg")   # instead of creating windows, it gives us files
@@ -207,7 +206,7 @@ def analyze_one(fname):  # we are defining a function here
 # Run Summary Run Analysis
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # do this  so that we prevent infinite spawning (Windows or macOS)
     os.makedirs("outputplots", exist_ok=True)
 
     # run analyze_one on every file

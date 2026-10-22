@@ -10,16 +10,16 @@ os.makedirs("ascii_test", exist_ok=True)
 
 rng = np.random.default_rng(42)   # fake data is the same every time
 
-n = 9000     # 9000 raw bins x 10 s = 90 ks
-dt = 10.0    # raw bin width in seconds
+n = 9000 # 9000 raw bins x 10 s = 90 ks
+dt = 10.0 # raw bin width in seconds
 
 
 def write_lc(name, counts, exposure=None):
     # script only 4 columns, so rest just stay zero
     d = np.zeros((len(counts), 8))
     d[:, 1] = np.arange(len(counts)) * dt   # start
-    d[:, 3] = d[:, 1] + dt                  # end
-    d[:, 4] = counts                        # counts
+    d[:, 3] = d[:, 1] + dt # end
+    d[:, 4] = counts # counts
     d[:, 7] = dt if exposure is None else exposure   # exposure
     np.savetxt(f"ascii_test/{name}_lc_ascii.txt", d)
 
@@ -54,8 +54,8 @@ for k in range(200):
 
 # both
 c = rng.poisson(0.04, n)
-c[3000:3500] = 0                          # dip
-c[6000:6500] = rng.poisson(0.10, 500)     # flare
+c[3000:3500] = 0   # dip
+c[6000:6500] = rng.poisson(0.10, 500)   # flare
 write_lc("both", c)
 
 ## end
